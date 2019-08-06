@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="book_id">
+<!-- 元数据 -->
+<metadata>
+	<dc-metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<dc:title><!----Title----></dc:title> <!-- 名称 -->
+		<dc:language>zh-cn</dc:language> <!-- 语言 -->
+		<dc:Identifier id="book_id"><!----Book ID----></dc:Identifier> <!-- 字典标识符 -->
+		<dc:creator>MyKindleRss</dc:creator> <!-- 创建人 -->
+		<dc:publisher>mykindlerss.cn</dc:publisher> <!-- 发布商 -->
+		<dc:subject>杂志</dc:subject> <!-- 类型标签 -->
+		<dc:date><!----Date----></dc:date> <!-- 发布日期 -->
+		<dc:description>MyKindleRas - 每天推送好文章。</dc:description> <!-- 描述 -->
+	</dc-metadata>
+	<x-metadata>
+		<output content-type="application/x-mobipocket-subscription-magazine" encoding="utf-8"/>
+		<EmbeddedCover>img/cover.jpg</EmbeddedCover><!-- 封面图片 -->
+	</x-metadata>
+</metadata>
+<!-- 资源列表 -->
+<manifest>
+	<!----Manifest---->
+	<item href="nav-contents.ncx" media-type="application/x-dtbncx+xml" id="nav-contents"/> <!-- 目录 -->
+	<item href="img/cover.jpg" media-type="image/jpeg" id="cover_img" /> <!-- 封面 -->
+</manifest>
+<!-- 文件骨架 -->
+<spine toc="nav-contents">
+	<!----Spine---->
+</spine>
+<!-- 页面指引 -->
+<guide>
+	<reference href="img/cover.jpg" title="Cover" type="cover"/>
+	<reference href="index_-1.html" title="Table" type="toc"/>
+</guide>
+</package>

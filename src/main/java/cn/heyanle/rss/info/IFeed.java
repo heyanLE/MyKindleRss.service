@@ -36,10 +36,12 @@ public class IFeed {
 
     private List<IEntry> entries = new ArrayList<>();
 
+
     /**
      * 从Url加载IEntry
      */
     public void parse() throws Exception{
+
 
         System.out.println("Feed开始加载：" + url);
 
@@ -87,7 +89,20 @@ public class IFeed {
             Document doc = Jsoup.parse(content);
             Elements es =  doc.select("img");
 
-            object.put("ImgStart",imgId);
+            if (es.size() > 0) {
+                object.put("ImgStart", imgId);
+            }else{
+                object.put("ImgStart",-1);
+            }
+
+            Elements ess =  doc.select("script");
+            for(Element e : ess){
+                content = content.replace(e.toString(),"");
+            }
+            Elements esss =  doc.select("link");
+            for(Element e : esss){
+                content = content.replace(e.toString(),"");
+            }
 
             for(Element e : es){
 
@@ -96,11 +111,20 @@ public class IFeed {
 
                 if (! realSrc.endsWith(".jpg") && ! realSrc.endsWith(".png")
                 && ! realSrc.endsWith(".JPG") && ! realSrc.endsWith(".PNG")){
+
+                    System.out.println(realSrc);
+
+                    String d = e.toString();
+                    //System.out.println("dddddddddddddddddd: "+d);
+
+                    content = content.replace(d,"");
+
                     break;
                 }
 
                 if (realSrc.indexOf("http") == 0){
                     src = realSrc;
+                    System.out.println("http => " +src);
                 }else{
 
                     if (realSrc.startsWith("/")){// ex： /img/ijfailefja.png
@@ -112,11 +136,17 @@ public class IFeed {
 
                 }
 
-                content = content.replace(realSrc,"img/"+imgId+".jpg");
+                content = content.replace(realSrc,"img/"+(id)+"_"+imgId+".jpg");
 
-                IImgLoader iImgLoader = new IImgLoader(src,basePath + "/img/"+imgId+((realSrc.endsWith(".png") || realSrc.endsWith(".PNG"))?".png":".jpg"));
+                IImgLoader iImgLoader = new IImgLoader(src,basePath + "/img/"+(id)+"_"+imgId+((realSrc.endsWith(".png") || realSrc.endsWith(".PNG"))?".png":".jpg"));
 
                 ImgLoadMaster.add(iImgLoader);
+
+                if (es.size() > 0) {
+                    object.put("ImgEnd", imgId);
+                }else{
+                    object.put("ImgEnd",-1);
+                }
 
                 imgId++;
 
@@ -127,7 +157,8 @@ public class IFeed {
             object.put("Headline",i.title);
             object.put("Link",i.link);
             object.put("Content",content);
-            object.put("ImgEnd",id);
+            object.put("PubDate",i.pubDate);
+
 
             array.add(object);
 
@@ -137,6 +168,12 @@ public class IFeed {
         String j = array.toJSONString();
         IO.write(new File(basePath+"/Entry.json"),j);
 
+        this.entries.clear();
+
+    }
+
+    public int getId(){
+        return id;
     }
 
     public static IFeed of (FeedInfo info){

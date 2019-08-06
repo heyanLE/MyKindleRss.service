@@ -27,7 +27,7 @@ public class FeedDao {
 
     }
 
-    public List<FeedInfo> getFeedsByUserId(int id){
+    public static List<FeedInfo> getFeedsByUserId(int id){
 
         List<FeedInfo> infos = new ArrayList<>();
 
@@ -43,7 +43,7 @@ public class FeedDao {
                             List<Integer> ids = new ArrayList<>();
 
                             while (rs.next()){
-                                ids.add(rs.getInt("rss_feed_id"));
+                                ids.add(rs.getInt("id"));
                             }
 
                             StringBuilder builder = new StringBuilder().append("(");

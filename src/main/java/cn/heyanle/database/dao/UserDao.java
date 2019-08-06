@@ -37,7 +37,7 @@ public class UserDao {
     public static UserInfo getUserByResultSet(ResultSet rs) throws SQLException{
         return UserInfo.newEmpty()
                 .setId(rs.getInt("id"))
-                .setPasswordHash(rs.getString("passwordHash"))
+                .setPasswordHash(rs.getString("password_hash"))
                 .setEmail(rs.getString("email"))
                 .setAimEmail(rs.getString("aim_email"))
                 .setPushTime(rs.getInt("push_time"))

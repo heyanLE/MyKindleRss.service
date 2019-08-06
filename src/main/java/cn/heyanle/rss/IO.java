@@ -60,6 +60,10 @@ public class IO {
 
             out = new BufferedOutputStream(new FileOutputStream(file));
 
+            if (value == null){
+                return;
+            }
+
             out.write(value.getBytes());
 
         }catch (IOException e){

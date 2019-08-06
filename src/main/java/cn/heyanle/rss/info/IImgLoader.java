@@ -20,6 +20,15 @@ public class IImgLoader {
         }
 
         ImageUtils.imgDownloadNet(url,destPath);
+        if (! new File(destPath).exists()){
+            ImageUtils.imgDownloadNet(url,destPath);
+            if (! new File(destPath).exists()) {
+                ImageUtils.imgDownloadNet(url,destPath);
+            }
+        }
+
+
+
         if (destPath.endsWith(".png")){
             ImageUtils.imgKindleAdaption(destPath,destPath,"png");
         }else{

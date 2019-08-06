@@ -74,7 +74,7 @@ public class ImageUtils {
             ImageWriter imageWriter = ImageIO.getImageWritersByFormatName(FormatName).next();
             ImageWriteParam imgWriteParams = new JPEGImageWriteParam(Locale.getDefault());
             imgWriteParams.setCompressionMode(ImageWriteParam.MODE_EXPLICIT);
-            imgWriteParams.setCompressionQuality(0.2f);
+            imgWriteParams.setCompressionQuality(0.3f);
             imgWriteParams.setProgressiveMode(ImageWriteParam.MODE_DISABLED);
             FileOutputStream out = new FileOutputStream(destImageFile);
             imageWriter.reset();

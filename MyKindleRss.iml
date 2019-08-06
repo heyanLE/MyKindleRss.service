@@ -19,5 +19,9 @@
     <orderEntry type="library" name="rome-utils-1.12.1" level="project" />
     <orderEntry type="library" name="jsoup-1.12.1" level="project" />
     <orderEntry type="library" name="fastjson-1.2.59" level="project" />
+    <orderEntry type="library" name="commons-io-2.6" level="project" />
+    <orderEntry type="library" name="c3p0-0.9.5.3" level="project" />
+    <orderEntry type="library" name="quartz-2.4.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="quartz-jobs-2.4.0-SNAPSHOT" level="project" />
   </component>
 </module>

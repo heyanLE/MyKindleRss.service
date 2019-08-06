@@ -13,23 +13,23 @@ import java.util.concurrent.Executors;
 
 public class Rss {
 
-    private volatile static List<IFeed> list = new ArrayList<>();
+    public volatile static List<IFeed> list = new ArrayList<>();
 
     private static ExecutorService cachedThreadPool = Executors.newCachedThreadPool();
+
+    public static void runByPool(Runnable runnable){
+        cachedThreadPool.execute(runnable);
+    }
 
 
     public static void refreshFeedList(){
 
         System.out.println("FeedList刷新");
-        cachedThreadPool.execute(new Runnable() {
-            @Override
-            public void run() {
-                list.clear();
-                for (FeedInfo info : FeedDao.getAllFeeds()){
-                    list.add(IFeed.of(info));
-                }
-            }
-        });
+
+        list.clear();
+        for (FeedInfo info : FeedDao.getAllFeeds()){
+            list.add(IFeed.of(info));
+        }
     }
 
     public static void parseFeed(){
@@ -40,27 +40,22 @@ public class Rss {
         File f = new File(IFeed.RSS_PATH);
         f.mkdirs();
 
-        cachedThreadPool.execute(new Runnable() {
-            @Override
-            public void run() {
 
-                for (IFeed feed : list){
-                    try {
-                        feed.parse();
-                    }catch (Exception e){
-                        e.printStackTrace();
-                    }
-                }
 
+            for (IFeed feed : list){
                 try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
+                    feed.parse();
+                }catch (Exception e){
                     e.printStackTrace();
                 }
-                Rss.parseImg();
-
             }
-        });
+
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            Rss.parseImg();
     }
 
     public static void parseImg(){

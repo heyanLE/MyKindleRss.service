@@ -1,7 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63d7bd55-a13b-4cee-b19e-d0277ded4330" name="Default Changelist" comment="" />
+    <list default="true" id="63d7bd55-a13b-4cee-b19e-d0277ded4330" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/c3p0_0_9_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_io_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/quartz_2_4_0_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/quartz_jobs_2_4_0_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/c3p0-0.9.5.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/commons-io-2.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/quartz-2.4.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/quartz-jobs-2.4.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/heyanle/job/FeedListJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/heyanle/job/PushParseJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/heyanle/job/RssJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/heyanle/mobi/CopyMaster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/heyanle/mobi/Mobi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/heyanle/mobi/WriteMaster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/heyanle/mobi/info/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/heyanle/mobi/info/EntryPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/heyanle/mobi/info/FeedPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/heyanle/mobi/info/FileCopy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/heyanle/mobi/info/Opf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/heyanle/mobi/info/Table.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/heyanle/mobi/info/Toc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/heyanle/mobi/info/WriteInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/heyanle/push/ImgCopyMaster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/heyanle/push/Push.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/heyanle/push/info/ImgCopyInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/heyanle/push/info/PushInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mobi/content.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mobi/img/cover.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mobi/index_-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mobi/nav-contents.ncx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mobi/page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mobi/page_styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mobi/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mobi/toc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyKindleRss.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyKindleRss.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/heyanle/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/heyanle/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/heyanle/database/dao/FeedDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/heyanle/database/dao/FeedDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/heyanle/database/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/heyanle/database/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/heyanle/rss/IO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/heyanle/rss/IO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/heyanle/rss/Rss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/heyanle/rss/Rss.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/heyanle/rss/info/IFeed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/heyanle/rss/info/IFeed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/heyanle/rss/info/IImgLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/heyanle/rss/info/IImgLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/heyanle/utils/ImageUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/heyanle/utils/ImageUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +83,20 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="my_kindle_rss: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="my_kindle_rss: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="rss_feed_users: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="my_kindle_rss: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="user: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -45,9 +107,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Ol54kGWAtAAECPGS5SXegbkQ9Z" />
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
@@ -64,12 +130,18 @@
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\JavaPath\MyKindleRss\lib" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\JavaPath\MyKindleRss.service\src\main\resources\mobi" />
+      <recent name="E:\JavaPath\MyKindleRss.service\src\main\resources" />
       <recent name="E:\JavaPath\MyKindleRss\lib" />
       <recent name="E:\JavaPath\MyKindleRss\src\main\resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\JavaPath\MyKindleRss.service\lib" />
+      <recent name="E:\JavaPath\MyKindleRss.service\src\main\resources\mobi" />
+      <recent name="E:\JavaPath\MyKindleRss.service\src\main\resources" />
+      <recent name="E:\JavaPath\MyKindleRss.service\src\main\java" />
+      <recent name="E:\JavaPath\MyKindleRss.service\src\main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -125,12 +197,17 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@12df6a8d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@252ee44b" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@12df6a8d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@202ee0f5" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@252ee44b" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@3508604a" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@252ee44b" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@38775bbf" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -167,10 +244,32 @@
       <workItem from="1564905682754" duration="397000" />
       <workItem from="1564918810685" duration="6097000" />
       <workItem from="1564968202784" duration="381000" />
+      <workItem from="1564969011386" duration="28086000" />
+      <workItem from="1565000247369" duration="1262000" />
+      <workItem from="1565002776342" duration="6348000" />
+      <workItem from="1565056160487" duration="17471000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MyKindleRss_service$Main__1_.ic" NAME="Main (1) Coverage Results" MODIFIED="1564987262254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>cn.heyanle.*</FILTER>
+    </SUITE>
   </component>
 </project>
